@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  background: #323c4b;
+}
+
+.card {
+  padding: 15px;
+  margin: 25px;
+}
+
+.today {
+  background-color: #222832;
+  width: 600px;
+  border-radius: 15px;
+  border: 10px;
+  border-color: #ffffff;
+  box-shadow: 0 1px 3px 0 #ffffff;
+  transition: 0.3s;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.today:hover {
+  box-shadow: 0 8px 16px 0 #ffffff;
+  transform: scale(1.01);
+  transition: 0.2s ease-in-out;
+}
+
+.forecast {
+  display: flex;
+  justify-content: center;
+}
+
+.forecast-cards {
+  background-color: #222832;
+  width: 220px;
+  height: 280px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 3px 0 #ffffff;
+  transition: 0.3s;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.forecast-cards:hover {
+  box-shadow: 0 8px 16px 0 #ffffff;
+  transform: scale(1.01);
+  transition: 0.2s ease-in-out;
+}
+
+/* .date {
+  font-size: 18px;
+} */
+
+p {
+  font-weight: 100;
+}
+
+h1 {
+  font-weight: 200;
+}
+
+h2 {
+  font-weight: 100;
+}
+
+input {
+  top: 0;
+  left: 0;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1.25rem;
+  background: none;
+  color: inherit;
+  font-weight: 100;
+  width: 600px;
+}
+
+input:hover {
+  border-color: #fc9a2c;
+}
+
+.input-holder {
+  margin: auto;
+  margin-top: 20px;
+  width: 600px;
+}
+
+.header,
+.title {
+  margin: 10px 0 0 10px;
+  text-align: center;
+}
+
+.value {
+  font-weight: 300;
+}
+
+.humidity,
+.pressure,
+.temp,
+.description,
+.wind {
+  padding-bottom: 10px;
+}
+
+img {
+  width: 50px;
+  position: relative;
+}
+
+@media screen and (max-width: 985px) {
+  .forecast {
+    flex-direction: column;
+  }
+  .today,
+  .input,
+  .input-holder,
+  .location-input {
+    width: 200px;
+  }
+
+  .forecast-cards {
+    height: 300px;
+  }
+
+  .today {
+    height: 320px;
+  }
+}
